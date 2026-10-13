@@ -26,6 +26,26 @@ L'objectif du projet est d'analyser les performances commerciales de l'entrepris
 7. Quel est l'impact des remises sur la rentabilité ?
 8. Existe-t-il des tendances saisonnières dans les ventes ?
 
+## Dataset
+
+Ce projet s'appuie sur le dataset **[Global Electronics Retailer](https://mavenanalytics.io/data-playground/global-electronics-retailer)**, qui simule l'activité commerciale d'une entreprise internationale spécialisée dans la vente de produits électroniques.
+
+Le dataset permet de suivre les commandes réalisées par les clients dans différents magasins et pays. Pour chaque vente, il est notamment possible d'identifier le client, le produit acheté, la quantité commandée, le magasin ayant traité la commande, les dates de commande et de livraison ainsi que la devise utilisée. Des informations complémentaires sont également disponibles sur les caractéristiques des produits, leur prix de vente et leur coût, le profil géographique des clients, les magasins et les taux de change.
+
+Les données sont réparties dans cinq tables métier principales :
+
+- `Sales` : lignes de commandes et quantités vendues ;
+- `Customers` : informations démographiques et géographiques sur les clients ;
+- `Products` : catalogue des produits, marques, catégories, prix de vente et coûts ;
+- `Stores` : localisation, surface et date d'ouverture des magasins ;
+- `Exchange_Rates` : taux de change par date et devise.
+
+Un sixième fichier, `Data_Dictionary`, documente les différents champs du dataset.
+
+La table `Sales` constitue la table centrale du modèle. Son niveau de granularité correspond à la **ligne de commande** : une ligne représente un produit acheté au sein d'une commande. Elle est reliée aux autres tables par les identifiants du client, du produit et du magasin, ainsi que par la date et la devise pour les taux de change.
+
+Ce dataset a été retenu car sa structure multi-tables permet de reproduire un cas d'analyse décisionnelle proche d'un environnement professionnel. Il offre notamment la possibilité d'étudier l'évolution des ventes, la rentabilité des produits, les performances géographiques et magasins ainsi que le comportement des clients, tout en mettant en pratique SQL, la modélisation dimensionnelle, la construction de KPI et la création d'un tableau de bord Power BI.
+
 ## Stack technique
 
 La stack technique sera définie progressivement au cours du projet.
