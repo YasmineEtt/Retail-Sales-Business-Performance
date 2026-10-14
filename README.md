@@ -46,6 +46,9 @@ La table `Sales` constitue la table centrale du modèle. Son niveau de granulari
 
 Ce dataset a été retenu car sa structure multi-tables permet de reproduire un cas d'analyse décisionnelle proche d'un environnement professionnel. Il offre notamment la possibilité d'étudier l'évolution des ventes, la rentabilité des produits, les performances géographiques et magasins ainsi que le comportement des clients, tout en mettant en pratique SQL, la modélisation dimensionnelle, la construction de KPI et la création d'un tableau de bord Power BI.
 
+**Source :** Microsoft, via [Maven Analytics](https://mavenanalytics.io/data-playground/global-electronics-retailer).  
+**Licence :** Public Domain (domaine public).
+
 ## Stack technique
 
 La stack technique sera définie progressivement au cours du projet.
